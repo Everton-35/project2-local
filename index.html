@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Blackjack</title>
+</head>
+<body>
+    <h1>Lets Play Blackjack!</h1>
+    <section id="playerArea">
+        <h1>Players Area</h1>
+        <div class="card" id="pCard1"></div>
+        <div class="card" id="pCard2"></div>
+        <div id="pTotal"></div>
+
+        <div class="button-container">
+            <button onclick="console.log('Player Twist button clicked')">Twist</button>
+            <button>Stick</button>
+        </div>
+    </section>
+    <section id="dealerArea">
+        <h1>Dealers Area</h1>
+        <div class="card" id="dCard1"></div>
+        <div class="card" id="dCard2"></div>
+        <div id="dTotal"></div>
+
+        <div class="button-container">
+            <button onclick="giveDealerACard()">Twist</button>
+            <button>Stick</button>
+        </div>    
+    </section>
+    <script src="assets/javascript/blackjack.js"></script>
+</body>
+</html>

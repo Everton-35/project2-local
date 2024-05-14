@@ -1,0 +1,52 @@
+let cards = [];
+let suits = ['Hearts', 'Clubs', 'Spades', 'Diamonds'];
+   
+    
+function fillTheDeck() {  
+    for (let cardNum = 1; cardNum <= 13; cardNum++) {
+        for (let i=0; i < suits.length; i++) {
+            cards.push(cardNum + suits[i]);
+            }   
+        }
+     console.log(`Outer loop output: ${cards}, number of cards: ${cards.length}`);
+}
+  
+
+function giveACard() {
+
+  for (let cardNum = 1; cardNum <= 13; cardNum++) {
+    cards.push(cardNum);
+}
+
+
+  let maxCards = 12;
+  let selectedCardNum = Math.floor(Math.random() * maxCards) + 1;
+
+  let maxSuit = 4;
+  let selectedSuitIndex = Math.floor(Math.random() * maxSuit);
+
+  let cardPicked = cards[selectedCardNum] + ' ' + suitsToChoose[selectedSuitIndex];
+  console.log('The card is ' + cardPicked);
+  return cardPicked;
+};
+
+
+
+let dealtCards = [];
+
+let firstCard = giveACard();
+document.getElementById("pCard1").innerHTML = firstCard;
+
+/*
+let secondCard = giveACard();
+document.getElementById("pCard2").innerHTML = secondCard;
+
+if (secondCard !== dealtCards[0]) {
+  dealtCards.push(secondCard);
+  console.log('The cards stored are: ' + dealtCards);
+} else {
+    secondCard = giveACard();
+    dealtCards.push(secondCard);
+    console.log('The cards stored are: ' + dealtCards);
+};
+*/

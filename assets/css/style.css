@@ -1,0 +1,47 @@
+* {
+    padding: 5px;
+}
+
+body {
+    background-color: darkgreen;
+    color: yellow;
+}
+
+section {
+    height: 400px;
+}
+
+.card {
+    height: 150px;
+    width: 100px;
+    background-color: blanchedalmond;
+    border: 2px solid yellow;
+    display: inline-block;
+    color: brown;
+    border-radius: 10px;
+}
+
+#pTotal {
+    height: 50px;
+    width: 250px;
+    font-size: large;
+    background-color: blanchedalmond;
+    border: 2px solid yellow;
+    display: inline-block;
+    color: brown;
+}
+
+#dTotal {
+    height: 50px;
+    width: 250px;
+    font-size: large;
+    background-color: blanchedalmond;
+    border: 2px solid yellow;
+    display: inline-block;
+    color: brown;
+}
+
+.button-container {
+    display: flex;
+}
+
