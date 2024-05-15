@@ -2,6 +2,7 @@ let cards = [];
 let suits = ['Hearts', 'Clubs', 'Spades', 'Diamonds'];
 let playerTotal = 0;
 let dealerTotal = 0;
+let message = 'Player Twist button clicked';
     
 function fillTheDeck() {  
     for (let cardNum = 1; cardNum <= 13; cardNum++) {
@@ -10,7 +11,8 @@ function fillTheDeck() {
             }   
     }
 }
-  
+ 
+
 
 function givePlayerACard() {
 
@@ -18,8 +20,10 @@ function givePlayerACard() {
   let cardPicked = cards[cardIndex];
   let showMe = cards.splice(cardIndex, 1);  //not sure i need to store these
   
-  let cardSplit = cardPicked.split(" ");
+  let cardSplit = [];
+  cardSplit = cardPicked.split(" ");
   playerTotal = playerTotal + parseInt(cardSplit[0]);
+  //delete cardSplit[0];
   
   return cardPicked;
 };
@@ -32,11 +36,12 @@ function giveDealerACard() {
   let cardPicked = cards[cardIndex];
   let showMe = cards.splice(cardIndex, 1);  //not sure i need to store these
  
-  let cardSplit = cardPicked.split(" ");
+  let cardSplit = [];
+  cardSplit = cardPicked.split(" ");
   dealerTotal = dealerTotal + parseInt(cardSplit[0]);
   
-  return cardPicked;
-}
+  return cardPicked, cardSplit;
+};
 
 /*
 function compareScores() {

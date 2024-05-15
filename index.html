@@ -15,7 +15,7 @@
         <div id="pTotal"></div>
 
         <div class="button-container">
-            <button onclick="console.log('Player Twist button clicked')">Twist</button>
+            <button onclick="console.log(message)">Twist</button>
             <button>Stick</button>
         </div>
     </section>
@@ -26,7 +26,7 @@
         <div id="dTotal"></div>
 
         <div class="button-container">
-            <button onclick="giveDealerACard()">Twist</button>
+            <button onclick="giveDealerACard(), console.log('card twisted to dealer is: ' + cardSplit), console.log('the Dealers total is: ' + dealerTotal)">Twist</button>
             <button>Stick</button>
         </div>    
     </section>
